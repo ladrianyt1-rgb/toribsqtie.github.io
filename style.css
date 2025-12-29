@@ -3,13 +3,21 @@ body {
   margin: 0;
   color: #333;
 
-  /* Sky blue + pink gradient + stars */
-  background: linear-gradient(to bottom right, #87ceeb, #ffb6c1);
-  background-image:
+  /* Gradient base */
+  background: linear-gradient(to bottom right, #ffb6c1, #87ceeb);
+
+  /* Stars using multiple radial gradients */
+  background-image: 
     radial-gradient(white 1px, transparent 1px),
     radial-gradient(white 1px, transparent 1px);
   background-size: 50px 50px, 80px 80px;
   background-position: 0 0, 25px 25px;
+  background-repeat: repeat, repeat;
+
+  /* Optional: Barbie silhouette (transparent PNG) */
+  /* background-image: url('barbie-silhouette.png'), radial-gradient(...), radial-gradient(...); */
+  /* background-repeat: no-repeat, repeat, repeat; */
+  /* background-position: right bottom, 0 0, 25px 25px; */
 }
 
 header {
@@ -27,21 +35,21 @@ section {
 .projects-row {
   display: flex;
   justify-content: center;
-  gap: 15px;       /* space between images */
-  flex-wrap: nowrap; /* Huwag mag-wrap, siguradong row lang */
+  gap: 15px;
+  flex-wrap: nowrap; /* keep row */
 }
 
 .project {
   background: rgba(255,255,255,0.85);
   padding: 10px;
   border-radius: 15px;
-  width: 200px;    /* maliit lang */
+  width: 200px; 
   text-align: center;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .project img {
-  width: 100%;      /* swak sa project container */
+  width: 100%;
   height: auto;
   border-radius: 10px;
 }
