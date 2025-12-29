@@ -26,22 +26,23 @@ section {
 
 .projects-row {
   display: flex;
-  gap: 20px;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 15px;       /* space between images */
+  flex-wrap: nowrap; /* Huwag mag-wrap, siguradong row lang */
 }
 
 .project {
   background: rgba(255,255,255,0.85);
-  padding: 15px;
+  padding: 10px;
   border-radius: 15px;
-  width: 250px;
+  width: 200px;    /* maliit lang */
   text-align: center;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .project img {
-  width: 100%;
+  width: 100%;      /* swak sa project container */
+  height: auto;
   border-radius: 10px;
 }
 
